@@ -48,7 +48,7 @@
 
     This process is going to do the following:
 
-    Read the candles and volumes from Olivia and produce for each market two files with candles stairs and volumes stairs respectively.
+    Read the candles and volumes from Candles Volumes and produce for each market two files with candles stairs and volumes stairs respectively.
 
     */
 
@@ -114,7 +114,7 @@
 
                                     let fileName = market.assetA + '_' + market.assetB + ".json";
 
-                                    let filePathRoot = bot.devTeam + "/" + "AAOlivia" + "." + bot.version.major + "." + bot.version.minor + "/" + global.CLONE_EXECUTOR.codeName + "." + global.CLONE_EXECUTOR.version + "/" + global.EXCHANGE_NAME + "/" + bot.dataSetVersion;
+                                    let filePathRoot = bot.devTeam + "/" + "Candles-Volumes" + "." + bot.version.major + "." + bot.version.minor + "/" + global.CLONE_EXECUTOR.codeName + "." + global.CLONE_EXECUTOR.version + "/" + global.EXCHANGE_NAME + "/" + bot.dataSetVersion;
                                     let filePath = filePathRoot + "/Output/" + CANDLES_FOLDER_NAME + "/" + "Multi-Period-Market" + "/" + timePeriod;
                                     filePath += '/' + fileName
 
@@ -390,7 +390,7 @@
 
                                     let fileName = market.assetA + '_' + market.assetB + ".json"
 
-                                    let filePathRoot = bot.devTeam + "/" + "AAOlivia" + "." + bot.version.major + "." + bot.version.minor + "/" + global.CLONE_EXECUTOR.codeName + "." + global.CLONE_EXECUTOR.version + "/" + global.EXCHANGE_NAME + "/" + bot.dataSetVersion;
+                                    let filePathRoot = bot.devTeam + "/" + "Candles-Volumes" + "." + bot.version.major + "." + bot.version.minor + "/" + global.CLONE_EXECUTOR.codeName + "." + global.CLONE_EXECUTOR.version + "/" + global.EXCHANGE_NAME + "/" + bot.dataSetVersion;
                                     let filePath = filePathRoot + "/Output/" + VOLUMES_FOLDER_NAME + "/" + "Multi-Period-Market" + "/" + timePeriod;
                                     filePath += '/' + fileName
 
@@ -790,7 +790,7 @@
 
                 try {
 
-                    let reportKey = "AAMasters" + "-" + "AATom" + "-" + "Multi-Period-Market" + "-" + "dataSet.V1";
+                    let reportKey = "AAMasters" + "-" + "Stairs-Patterns" + "-" + "Multi-Period-Market" + "-" + "dataSet.V1";
                     let thisReport = statusDependencies.statusReports.get(reportKey);
 
                     thisReport.file.lastExecution = bot.processDatetime;
