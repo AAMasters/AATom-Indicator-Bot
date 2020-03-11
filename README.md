@@ -1,4 +1,4 @@
-# I'm Stairs Patterns, an AA i-Bot!
+# I'm Tom, an AA i-Bot!
 
 # Disclaimer
 
